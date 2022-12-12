@@ -2,15 +2,15 @@
 class Movie {
     // variabili
     public $title;
-    public $genre;
+    public $genres;
     public $length;
     public $year;
     public $subscription;
 
     // constructor
-    function __construct(string $_title, string $_genres, int $_length,int $_year, string $_subscription){
+    function __construct(string $_title, array $_genres, int $_length,int $_year, string $_subscription){
         $this->title = $_title;
-        $this->genre = $_genres;
+        $this->genres = $_genres;
         $this->length = $_length;
         $this->year = $_year;
         $this->subscription = $_subscription;
